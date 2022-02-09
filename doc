@@ -1,0 +1,32 @@
+https://dev.to/carlomigueldy/building-a-restful-api-with-nestjs-and-mongodb-mongoose-2165
+
+npm install -g @nestjs/cli
+nest -v
+nest new todo-rest-app
+cd todo-rest-app && code .
+
+# TodoModule
+nest g module Todo
+# Using alias: nest g mo Todo
+
+# TodoService
+nest g service Todo
+# Using alias: nest g s Todo
+
+# TodoController
+nest g controller Todo 
+# Using alias: nest g co Todo 
+
+npm install --save @nestjs/mongoose mongoose
+
+mkdir src/todo/schemas && touch src/todo/schemas/todo.schema.ts
+
+mkdir src/todo/dto
+
+touch src/todo/dto/base-todo.dto.ts
+
+touch src/todo/dto/create-todo.dto.ts
+
+touch src/todo/dto/update-todo.dto.ts
+
+touch src/todo/service/company.service.ts
